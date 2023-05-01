@@ -1,0 +1,297 @@
+
+@import url("reset.css");
+body{
+    background: linear-gradient(to right, #38de48, #311cd1);
+    display: flex;    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin-left: 40px;
+}
+
+.login-card{
+top: -80px;
+margin-top: 100px;
+background: rgba(255, 255, 255, .5);
+border-radius: 10px;
+position: relative;
+width: 550px;
+padding: 4rem;
+}
+
+.login-card::before {
+content:"";
+position: absolute;
+background: rgba(255, 255, 255, .4) ;
+inset: 0;
+transform: rotate(-5deg);
+z-index: -1;
+}
+
+
+
+.login-card-logo img {
+width: 50px;
+margin-top: 10px;
+display: flex;
+margin-top: -50px;
+}
+
+.login-card-logo,
+.login-card-header,
+.new-login{
+text-align: center;
+}
+
+.titulo h2{
+font-family: monospace;
+font-style: oblique;
+padding-left: 2px;
+}
+
+.login-card-logo img,
+.titulo h2 {
+align-items: center;
+margin-left: -48px;
+margin-bottom: -5px;
+margin-top: 0px;
+position: relative;
+
+}
+
+a{
+text-decoration: none;
+color: #0400ff;
+}
+
+a :hover{
+text-decoration: underline;
+}
+
+h4{
+position: absolute;
+margin-top: -50px;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-left: 265px;
+}
+
+.login-card-social-btn{
+margin-top: -30px;
+}
+
+/*.google{
+min-width: 250px;
+vertical-align: top;
+align-items: baseline;
+background: rgb(255, 255, 255);
+width: 180px;
+height: 40px;
+border-radius: 5px;
+}
+
+
+svg{
+margin-left: 30px;
+}
+
+.fb{
+min-width: 250px;
+vertical-align: top;
+align-items: center;
+background: #039BE5;
+width: 180px;
+height: 40px;
+border-radius: 5px;
+margin-left: 150px;
+}
+*/
+.fb img{
+width: 40px;
+}
+
+.google img{
+    width: 30px;
+    }
+
+.form-card-form{
+display: flex;
+flex-direction: column;
+gap: 1.5rem;
+
+}
+
+.login-card-header h1{
+font-size:2rem;
+font-weight: 600;
+margin-bottom: .5rem;
+}
+
+.login-card-header h1 + div{
+font-size: calc(1rem * .8);
+opacity: .8;
+margin-bottom: 3rem;
+}
+
+.form-card-form .form-item {
+position: relative;
+}
+
+
+.form-card-form .form-item .form-item-icon{
+position: absolute;
+top: 1.2rem;
+left: 1.4rem;
+font-size: 1.3rem;
+justify-content: center;
+}
+
+.form-card-form .checkbox{
+display: flex;
+align-items: center;
+gap: 7px;
+}
+
+.form-card-form .form-item-other{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: calc(1rem * .8);
+    margin-bottom: .5rem;
+}
+
+.new-login{
+margin-top: 1.5rem;
+font-size: calc(1rem * 1);
+}
+
+.login-card input[type="text"],
+.login-card input[type="mail"],
+.login-card input[type="password"]{
+border: none;
+outline: none;
+background: rgba(255, 255, 255, .3);
+padding: 1.5rem 1.5rem;
+padding-left: calc(1rem * 3.5);
+border-radius: 100px;
+width: 100%;
+transition: background .5s;
+}
+
+.login-card input:focus{
+background: white;
+}
+
+.login-card input[type="checkbox"]{
+width: 16px;
+height: 16px;
+accent-color: black;
+}
+.form-card-form button{
+background: black;
+color: white;
+padding: 1rem;
+border-radius: 100px;
+text-transform: uppercase;
+letter-spacing: 2px;
+transition: background .5s;
+}
+
+.login-card button:hover{
+background: rgba(0, 0, 0, .85);
+cursor: pointer;
+}
+
+.login-card-social{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+    margin-top: 3rem;
+}
+.login-card-social > h4{
+margin-left: 10rem;
+margin-top: -110px;
+justify-content: center;
+opacity: .8;
+text-transform: uppercase;
+letter-spacing: 4px;
+font-size: calc(1rem * .8);
+}
+
+.ou{
+margin-top: 15px;
+display: flex;
+margin-right: 270px;
+justify-content: center;
+opacity: .8;
+text-transform: uppercase;
+letter-spacing: 4px;
+font-size: calc(1rem * .8);
+}
+
+.login-card-social-btn{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: row-reverse;
+gap: 1rem;
+margin-top: -70px;
+
+}
+.login-card-social-btn .google{
+transform: none;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 5px;
+width: 50px;
+height: 50px;
+transition: all .5s;
+background: white;
+width: 30px;
+width: 180px;
+height: 40px;
+}
+
+.login-card-social-btn .fb{
+transform: none;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 5px;
+width: 50px;
+height: 50px;
+transition: all .5s;
+background: #039BE5;
+width: 30px;
+width: 180px;
+height: 40px;
+margin-left: 80px;
+}
+
+
+.login-card-social-btn .fb:hover{
+transform: scale(1.2);
+}
+
+.login-card-social-btn .google:hover{
+    transform: scale(1.2);
+    }
+    
+
+/*@media (max-width: 768px){
+body{
+padding:2rem 0 ;
+}
+
+.login-card{
+width: 280px;
+padding: 2rem;
+}
+}
+
+
+ 
